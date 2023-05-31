@@ -1,0 +1,27 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@lib/providers/(.*)": "<rootDir>/../libs/providers/src/$1",
+    "@lib/providers": "<rootDir>/../libs/providers/src",
+    "@lib/entities/(.*)": "<rootDir>/../libs/entities/src/$1",
+    "@lib/entities": "<rootDir>/../libs/entities/src",
+    "@lib/post/(.*)": "<rootDir>/../libs/post/src/$1",
+    "@lib/post": "<rootDir>/../libs/post/src",
+    "@lib/posts/(.*)": "<rootDir>/../libs/posts/src/$1",
+    "@lib/posts": "<rootDir>/../libs/posts/src",
+    "@lib/errors/(.*)": "<rootDir>/../libs/errors/src/$1",
+    "@lib/errors": "<rootDir>/../libs/errors/src",
+    "@lib/shared/(.*)": "<rootDir>/../libs/shared/src/$1",
+    "@lib/shared": "<rootDir>/../libs/shared/src"
+  }
+}
