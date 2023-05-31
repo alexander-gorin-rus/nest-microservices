@@ -24,6 +24,7 @@ export class PostAggregate extends PostServices implements IPost {
   massage: string;
 
   @IsUUID()
+  @IsNotEmpty()
   authorId: string;
 
   @IsBoolean()
