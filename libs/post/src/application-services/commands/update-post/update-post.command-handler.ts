@@ -21,8 +21,8 @@ export class UpdatePostCommandHandler
       throw new BadRequestException(`Post with id ${post.id} not found`);
     }
     Object.assign(existPost, post);
-    const postAggragate = PostAggregate.create(existPost);
-    await this.postRepository.save(postAggragate);
-    return postAggragate;
+    const postAggregate = PostAggregate.create(existPost);
+    await this.postRepository.save(postAggregate);
+    return postAggregate;
   }
 }

@@ -21,7 +21,7 @@ export class PostAggregate extends PostServices implements IPost {
 
   @IsString()
   @IsNotEmpty()
-  massage: string;
+  message: string;
 
   @IsUUID()
   @IsNotEmpty()

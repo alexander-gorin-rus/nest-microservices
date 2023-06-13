@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryColumn } from "typeorm";
+import { Column, Entity, PrimaryColumn } from 'typeorm';
 
 @Entity('posts')
 export class PostEntity {
@@ -11,15 +11,15 @@ export class PostEntity {
   @Column()
   message: string;
 
-  @Column({name: 'author_id'})
+  @Column({ name: 'author_id' })
   authorId: string;
 
-  @Column({name: 'is_published'})
+  @Column({ name: 'is_published' })
   isPublished: boolean;
 
-  @Column({name: 'created_at'})
+  @Column({ name: 'created_at' })
   createdAt: string;
 
-  @Column({name: 'updated_at'})
+  @Column({ name: 'updated_at' })
   updatedAt: string;
 }
